@@ -1,0 +1,436 @@
+<html>
+  <head>
+    <title>csp-sports-quiz-app</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" href="applab/fontawesome-webfont.woff2" as="font" />
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script>
+      function setExportConfig(config) {
+        window.EXPORT_OPTIONS = config;
+      }
+    </script>
+    <script src="https://studio.code.org/projects/applab/2nRnTyuFlazUszce5LlGSztUKaSWNkHQ0q9Oio1Qlqc/export_config?script_call=setExportConfig"></script>
+    <script src="applab/applab-api.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+    <link rel="stylesheet" href="applab/applab.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      id="divApplab"
+      class="appModern running"
+      tabindex="1"
+      style="width: 320px; height: 450px; display: block"
+    >
+      <div
+        class="screen"
+        tabindex="1"
+        data-theme="default"
+        id="homeScreen"
+        style="
+          display: block;
+          height: 450px;
+          width: 320px;
+          left: 0px;
+          top: 0px;
+          position: absolute;
+          z-index: 0;
+          background-color: rgb(255, 255, 255);
+        "
+      >
+        <button
+          id="beginQuizBtn"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 45px;
+            width: 110px;
+            background-color: rgb(23, 23, 23);
+            color: ghostwhite;
+            border-color: lightskyblue;
+            border-radius: 5px;
+            border-width: 3px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 16px;
+            position: absolute;
+            top: 125px;
+            left: 105px;
+          "
+        >
+          Begin</button
+        ><label
+          style="
+            margin: 0px;
+            line-height: 1;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            max-width: 320px;
+            border-style: solid;
+            text-rendering: optimizespeed;
+            color: rgb(23, 23, 23);
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgb(77, 87, 95);
+            border-radius: 0px;
+            border-width: 0px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 28px;
+            padding: 2px 15px;
+            width: 320px;
+            position: absolute;
+            left: 0px;
+            top: 35px;
+            text-align: center;
+          "
+          id="appTitle"
+          >Sports Quiz App</label
+        >
+      </div>
+      <div
+        class="screen"
+        tabindex="1"
+        data-theme="default"
+        id="qOneScreen"
+        style="
+          display: none;
+          height: 450px;
+          width: 320px;
+          left: 0px;
+          top: 0px;
+          position: absolute;
+          z-index: 0;
+          background-color: rgb(255, 255, 255);
+        "
+      >
+        <div
+          contenteditable="true"
+          class="textArea"
+          id="qOneText"
+          style="
+            width: 200px;
+            border-style: solid;
+            background-color: snow;
+            color: rgb(23, 23, 23);
+            border-color: lightcoral;
+            border-radius: 2px;
+            border-width: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 55px;
+            top: 35px;
+            margin: 0px;
+          "
+        >
+          Which one of these NBA superstars scored 81 points in a single game?
+        </div>
+        <select
+          id="qOneOptions"
+          style="
+            height: 30px;
+            margin: 0px;
+            border-style: solid;
+            background-color: rgb(255, 255, 255);
+            color: rgb(77, 87, 95);
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%234d575f%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E');
+            border-color: rgb(0, 0, 0);
+            border-radius: 4px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 0px 30px 0px 15px;
+            position: absolute;
+            top: 135px;
+            left: 55px;
+            width: 180px;
+          "
+        >
+          <option>Kevin Durant</option>
+          <option>Michael Jordan</option>
+          <option>Kobe Bryant</option>
+          <option>Steph Curry</option></select
+        ><button
+          id="qOneSubmitBtn"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            width: 110px;
+            background-color: rgb(23, 23, 23);
+            color: ghostwhite;
+            border-color: lightskyblue;
+            border-radius: 5px;
+            border-width: 2px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 105px;
+            top: 275px;
+            height: 45px;
+          "
+        >
+          Submit
+        </button>
+      </div>
+      <div
+        class="screen"
+        tabindex="1"
+        data-theme="default"
+        id="qTwoScreen"
+        style="
+          display: none;
+          height: 450px;
+          width: 320px;
+          left: 0px;
+          top: 0px;
+          position: absolute;
+          z-index: 0;
+          background-color: rgb(255, 255, 255);
+        "
+      >
+        <div
+          contenteditable="true"
+          class="textArea"
+          id="qTwoText"
+          style="
+            width: 200px;
+            border-style: solid;
+            background-color: snow;
+            color: rgb(23, 23, 23);
+            border-color: lightcoral;
+            border-radius: 2px;
+            border-width: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 55px;
+            top: 35px;
+            margin: 0px;
+          "
+          data-mod-backgroundcolor="1"
+          data-mod-textcolor="1"
+          data-mod-bordercolor="1"
+          data-mod-borderwidth="1"
+          data-mod-fontsize="1"
+        >
+          Which one of these NBA superstars scored the most points in a playoff
+          game?
+        </div>
+        <select
+          id="qTwoOptions"
+          style="
+            height: 30px;
+            margin: 0px;
+            border-style: solid;
+            background-color: rgb(255, 255, 255);
+            color: rgb(77, 87, 95);
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%234d575f%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E');
+            border-color: rgb(0, 0, 0);
+            border-radius: 4px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 0px 30px 0px 15px;
+            position: absolute;
+            top: 135px;
+            left: 55px;
+            width: 180px;
+          "
+          data-mod-padding="1"
+        >
+          <option>Michael Jordan</option>
+          <option>Lebron James</option>
+          <option>Damian Lillard</option>
+          <option>Kobe Bryant</option></select
+        ><button
+          id="qTwoSubmitBtn"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            width: 110px;
+            background-color: rgb(23, 23, 23);
+            color: ghostwhite;
+            border-color: lightskyblue;
+            border-radius: 5px;
+            border-width: 2px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 105px;
+            top: 275px;
+            height: 45px;
+          "
+          data-mod-backgroundcolor="1"
+          data-mod-textcolor="1"
+          data-mod-bordercolor="1"
+          data-mod-borderradius="1"
+          data-mod-borderwidth="1"
+        >
+          Submit
+        </button>
+      </div>
+      <div
+        class="screen"
+        tabindex="1"
+        data-theme="default"
+        id="qThreeScreen"
+        style="
+          display: none;
+          height: 450px;
+          width: 320px;
+          left: 0px;
+          top: 0px;
+          position: absolute;
+          z-index: 0;
+          background-color: rgb(255, 255, 255);
+        "
+      >
+        <div
+          contenteditable="true"
+          class="textArea"
+          id="qThreeText"
+          style="
+            width: 200px;
+            border-style: solid;
+            background-color: snow;
+            color: rgb(23, 23, 23);
+            border-color: lightcoral;
+            border-radius: 2px;
+            border-width: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding: 5px 15px;
+            position: absolute;
+            left: 55px;
+            top: 35px;
+            margin: 0px;
+          "
+          data-mod-backgroundcolor="1"
+          data-mod-textcolor="1"
+          data-mod-bordercolor="1"
+          data-mod-borderwidth="1"
+          data-mod-fontsize="1"
+        >
+          Which one of these NBA superstars holds the all-time scoring record?
+        </div>
+        <select
+          id="qThreeOptions"
+          style="
+            height: 30px;
+            margin: 0px;
+            border-style: solid;
+            background-color: rgb(255, 255, 255);
+            color: rgb(77, 87, 95);
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%234d575f%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E');
+            border-color: rgb(0, 0, 0);
+            border-radius: 4px;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding: 0px 30px 0px 15px;
+            position: absolute;
+            top: 135px;
+            left: 55px;
+            width: 180px;
+          "
+          data-mod-padding="1"
+        >
+          <option>Wilt Chamberlain</option>
+          <option>Lebron James</option>
+          <option>Karl Malone</option>
+          <option>Kareem Abdul-Jabbar</option></select
+        ><button
+          id="qThreeSubmitBtn"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            width: 110px;
+            background-color: rgb(23, 23, 23);
+            color: ghostwhite;
+            border-color: lightskyblue;
+            border-radius: 5px;
+            border-width: 2px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 105px;
+            top: 275px;
+            height: 45px;
+          "
+          data-mod-backgroundcolor="1"
+          data-mod-textcolor="1"
+          data-mod-bordercolor="1"
+          data-mod-borderradius="1"
+          data-mod-borderwidth="1"
+        >
+          Submit
+        </button>
+      </div>
+      <div
+        class="screen"
+        tabindex="1"
+        data-theme="default"
+        id="resultsScreen"
+        style="
+          display: none;
+          height: 450px;
+          width: 320px;
+          left: 0px;
+          top: 0px;
+          position: absolute;
+          z-index: 0;
+          background-color: rgb(255, 255, 255);
+        "
+      >
+        <div
+          contenteditable="true"
+          class="textArea"
+          id="resultsDisplay"
+          style="
+            width: 200px;
+            border-style: solid;
+            background-color: snow;
+            color: rgb(23, 23, 23);
+            border-color: rgb(255, 255, 255);
+            border-radius: 2px;
+            border-width: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding: 5px 15px;
+            position: absolute;
+            top: 75px;
+            margin: 0px;
+            left: 60px;
+          "
+        ></div>
+        <button
+          id="tryAgainBtn"
+          style="
+            padding: 0px;
+            margin: 0px;
+            border-style: solid;
+            height: 55px;
+            width: 110px;
+            background-color: rgb(23, 23, 23);
+            color: ghostwhite;
+            border-color: lightskyblue;
+            border-radius: 5px;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 105px;
+            top: 260px;
+            border-width: 3px;
+          "
+        >
+          Re-take the Quiz
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
