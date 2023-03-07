@@ -1,6 +1,6 @@
 # AP CSP Create Task Exemplar: A Sports Quiz App
 
-Programming is a collaborative and creative process that brings ideas to life through the development of software. In the Create performance task, you will design and implement a program that might solve a problem, enable innovation, explore personal interests, or express creativity. Your submission must include elements listed in the "Submission Requirements" section.
+Programming is a collaborative and creative process that brings ideas to life through the development of software. In the Create performance task, you will design and implement a program that might solve a problem, enable innovation, explore personal interests, or express creativity. Your submission must include elements listed in the following "Submission Requirements" sections.
 
 ### Program Code Submission Requirements
 
@@ -34,7 +34,7 @@ It may **NOT** contain:
 - any distinguishing information about yourself
 - voice narration (though text captions are encouraged)
 
-Your video must be:
+It must be:
 
 - either .mp4, .wmv, .avi, or .mov format
 - no more than 1min in length
@@ -48,7 +48,7 @@ Submit your responses to prompts 3(a) – 3(d), which are described below. Your 
 
 1. Describes the overall **purpose** of the program
 
-_The purpose of my sports quiz program is to challenge users' knowledge of famous basketball players. The program displays a series of questions to the user, and the user must select an answer from a list of options. After answering all of the questions, the program calculates the user's score and displays it on the screen. The goal of the program is to provide an entertaining and educational experience for users who are interested in basketball._
+_The purpose of my sports quiz program is to challenge user's knowledge of famous basketball players. The program displays a series of questions to the user, and the user must select an answer from a list of options. After answering all of the questions, the program calculates the user's score and displays it on the screen. The goal of the program is to provide an entertaining and educational experience for users who are interested in basketball._
 
 2. Describes what **functionality** of the program is demonstrated in the video
 
@@ -56,7 +56,7 @@ _The video demonstrates the program's core functionality, including its ability 
 
 3. Describes the **input** and **output** of the program demonstrated in the video
 
-_The input to the program in the video is user-selected answers to each question, which are stored in a list. The output is the final score, displayed on the screen at the end of the quiz._
+_The **input** to the program in the video is user-selected answers to each question, which are stored in a list. The **output** is the final score, displayed on the screen at the end of the quiz._
 
 **3(b).** Capture and paste two program code segments you developed during the administration of this task that contain a list (or other collection type) being used to manage complexity in your program.
 
@@ -105,12 +105,12 @@ _The ‘calculateAndDisplayFinalScore’ procedure calculates and displays the u
 
 _The algorithm implemented in the calculateAndDisplayFinalScore procedure works as follows:_
 
-_1. Declare variables ‘totalQuestions’ and ‘userScore’ and assign their initial values to be [0]_
-_2. Use a for-loop to iterate through each question in the given ‘answersList’._
-_3. For each question, use an if-statement to compare the corresponding user response in ‘userResList’ with the correct answer in ‘answersList’._
-_4. If the user response is correct, increment ‘userScore’._
-_5. After iterating through all questions, calculate the percentage of correct answers by dividing ‘userScore’ by ‘totalQuestions’._
-_6. Use the setText function to display the user's score as a message on the screen._
+1. _Declare variables ‘totalQuestions’ and ‘userScore’ and assign their initial values to be [0]_
+2. _Use a for-loop to iterate through each question in the given ‘answersList’._
+3. _For each question, use an if-statement to compare the corresponding user response in ‘userResList’ with the correct answer in ‘answersList’._
+4. _If the user response is correct, increment ‘userScore’._
+5. _After iterating through all questions, calculate the percentage of correct answers by dividing ‘userScore’ by ‘totalQuestions’._
+6. _Use the setText function to display the user's score as a message on the screen._
 
 _By using this algorithm, the 'calculateAndDisplayFinalScore' procedure accurately evaluates the user's performance and provides them with final score._
 
