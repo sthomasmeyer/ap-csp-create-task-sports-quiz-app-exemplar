@@ -120,11 +120,11 @@ _By using this algorithm, the 'calculateAndDisplayFinalScore' procedure accurate
 
 - first call:
 
-**calculateAndDisplayFinalScore([“Kobe”, “Jordan”, Lebron”], [“Lebron”, “Jordan”, “Kobe”]);**
+**_calculateAndDisplayFinalScore([“Kobe”, “Jordan”, Lebron”], [“Lebron”, “Jordan”, “Kobe”]);_**
 
 - second call:
 
-**calculateAndDisplayFinalScore([23, 8, 6], [23, 8, 6]);**
+**_calculateAndDisplayFinalScore([23, 8, 6], [23, 8, 6]);_**
 
 2. Describe what condition(s) is being tested by each call to the procedure.
 
