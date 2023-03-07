@@ -98,8 +98,8 @@ _The selected lists manage data in this program, simplify the code, and make it 
 
 Then, provide a ~200 word written response that does both of the following:
 
-3. Describe in general what the identified procedure does and how it contributes to the overall functionality of the program
-4. Explain in detailed steps how the algorithm implemented in the identified procedure works. Your explanation must be detailed enough for someone else to recreate it.
+3. Describes in general what the identified procedure does and how it contributes to the overall functionality of the program
+4. Explains in detailed steps how the algorithm implemented in the identified procedure works. Your explanation must be detailed enough for someone else to recreate it.
 
 _The ‘calculateAndDisplayFinalScore’ procedure calculates and displays the user's final score after they have completed the sports quiz. It is a critical part of the program as it is responsible for evaluating the user's answers and displaying their final score, providing feedback to the user, and allowing them to assess their understanding of the material._
 
