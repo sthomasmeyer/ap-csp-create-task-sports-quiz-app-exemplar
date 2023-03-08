@@ -86,9 +86,9 @@ Then provide a ~200 word written response that does all three of the following:
 
 1. The first program code segment must be a student-developed procedure that:
 
-   a) defines the **procedure's name** and return type (if necessary)
-   b) contains and uses one or more **parameters** that have an effect on the functionality of the procedure
-   c) implements an **algorithm** that includes sequencing, selection, and iteration
+   - defines the **procedure's name** and return type (if necessary)
+   - contains and uses one or more **parameters** that have an effect on the functionality of the procedure
+   - implements an **algorithm** that includes sequencing, selection, and iteration
 
    ![!](./images/csp-sports-quiz-3c-1-screenshot.png)
 
@@ -118,18 +118,18 @@ Then, provide a ~200 word written response that does both of the following:
 
 1. Describes two calls to the procedure identified in written response 3(c). Each call must pass a different argument(s) that causes a different segment of code in the algorithm to execute.
 
-   - first call: **_calculateAndDisplayFinalScore([“Kobe”, “Jordan”, Lebron”], [“Lebron”, “Jordan”, “Kobe”]);_**
+   - **first call:** _calculateAndDisplayFinalScore([“Kobe”, “Jordan”, Lebron”], [“Lebron”, “Jordan”, “Kobe”]);_
 
-   - second call: **_calculateAndDisplayFinalScore([23, 8, 6], [23, 8, 6]);_**
+   - **second call:** _calculateAndDisplayFinalScore([23, 8, 6], [23, 8, 6]);_
 
 2. Describe what condition(s) is being tested by each call to the procedure.
 
-   - condition(s) tested by the first call: _The first call tests the caluclateAndDisplayFinalScore function by passing a list of correct answers as the first parameter and user-selected answers as the second. The elements in these lists are not perfectly aligned._
+   - **condition(s) tested by the first call:** _The first call tests the caluclateAndDisplayFinalScore function by passing a list of correct answers as the first parameter and user-selected answers as the second. The elements in these lists are not perfectly aligned._
 
-   - condition(s) tested by the second call: _The second call tests the caluclateAndDisplayFinalScore function by passing a list of correct answers as the first parameter and user-selected answers as the second. The elements in these lists are perfectly aligned._
+   - **condition(s) tested by the second call:** _The second call tests the caluclateAndDisplayFinalScore function by passing a list of correct answers as the first parameter and user-selected answers as the second. The elements in these lists are perfectly aligned._
 
 3. Identifies the result of each call.
 
-   - result of the first call: _As a result of the first call, the program will generate a string -- "You answered 1 out of 3 questions correctly!" -- and put it on display for the user._
+   - **result of the first call:** _As a result of the first call, the program will generate a string -- "You answered 1 out of 3 questions correctly!" -- and put it on display for the user._
 
-   - result of the second call: _As a result of the second call, the program will generate a string -- "You answered 3 out of 3 questions correctly!" -- and put it on display for the user._
+   - **result of the second call:** _As a result of the second call, the program will generate a string -- "You answered 3 out of 3 questions correctly!" -- and put it on display for the user._
