@@ -40,7 +40,7 @@ It must be:
 - no more than 1min in length
 - no more than 30mb file size
 
-![!](./images/ap-csp-sports-quiz-exemplar-video.mp4)
+https://user-images.githubusercontent.com/91103557/224175228-df3bc627-4804-4e77-a4ed-076dd4e1badc.mp4
 
 ### Exemplar Written Responses
 
